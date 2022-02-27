@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply !text-3xl;
+  }
+  h2 {
+    @apply !text-2xl;
+  }
+  h3 {
+    @apply !text-xl;
+  }
+  h4 {
+    @apply !text-lg;
+  }
+  h5 {
+    @apply !text-sm;
+  }
+  h6 {
+    @apply !text-xs;
+  }
+}
+
+@layer utilities {
+   .sch-check-box {
+    @apply flex items-center mr-2 text-sm;
+  }
+
+  .btn {
+    @apply border-none outline-none hover:opacity-80;
+  }
+
+  .btn-outline {
+    @apply border bg-white hover:bg-coolgray-50;
+  }
+}
+
+/** 버튼 공통 */
+.btn-tiny {
+  @apply h-4;
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.btn-xs {
+  @apply h-6 text-xs;
+}
+
+.btn-sm {
+  @apply h-7 text-sm;
+}
+
+.btn-lg {
+  @apply h-9 text-sm;
+}
+
+.btn-xg {
+  @apply h-12 text-sm;
+}
+
+/** 일반 버튼 */
+.btn-gray {
+  @apply btn bg-gray-500 hover:bg-gray-500;
+}
+
+.btn-gray-white {
+  @apply btn bg-gray-200 hover:bg-gray-200;
+}
+
+.btn-gray-light {
+  @apply btn bg-gray-400 hover:bg-gray-400;
+}
+
+.btn-red {
+  @apply btn bg-red-500 hover:bg-red-500;
+}
+
+.btn-yellow {
+  @apply btn bg-yellow-500 hover:bg-yellow-500;
+}
+
+.btn-orange {
+  @apply btn bg-orange-500 hover:bg-orange-500;
+}
+
+.btn-green {
+  @apply btn bg-green-600 hover:bg-green-600;
+}
+
+.btn-light-blue {
+  @apply btn bg-blue-300 hover:bg-blue-300
+}
+
+.btn-blue {
+  @apply btn bg-blue-500 hover:bg-blue-500;
+}
+
+.btn-indigo {
+  @apply btn bg-indigo-500 hover:bg-indigo-500;
+}
+
+.btn-purple {
+  @apply btn bg-purple-500 hover:bg-purple-500;
+}
+
+.btn-pink {
+  @apply btn bg-pink-500 hover:bg-pink-500;
+}
+
+.btn-white {
+  @apply btn bg-white hover:bg-gray-100;
+}
+
+.btn-black {
+  @apply btn bg-black hover:bg-gray-800;
+} 
+
+/** outline 버튼 */
+.btn-gray-outline {
+  @apply btn-outline  border-gray-400 text-gray-500 hover:bg-gray-50 hover:border-gray-500;
+}
+
+.btn-gray-white-outline {
+  @apply btn-outline  border-gray-300 text-gray-400  hover:bg-gray-50 hover:border-gray-400;
+}
+
+.btn-red-outline {
+  @apply btn-outline border-red-500 text-red-500 hover:border-red-300;
+}
+
+.btn-yellow-outline {
+  @apply btn-outline border-yellow-500 text-yellow-500 hover:border-yellow-300;
+}
+
+.btn-orange-outline {
+  @apply btn-outline border-orange-500 text-orange-500 hover:border-orange-300;
+}
+
+.btn-green-outline {
+  @apply btn-outline border-green-600 text-green-600 hover:border-green-400;
+}
+
+.btn-blue-outline {
+  @apply btn-outline border-blue-500 text-blue-500 hover:border-blue-300;
+}
+
+.btn-indigo-outline {
+  @apply btn-outline border-indigo-500 text-indigo-500 hover:border-indigo-300;
+}
+
+.btn-purple-outline {
+  @apply btn-outline border-purple-500 text-purple-500 hover:border-purple-300;
+}
+
+.btn-pink-outline {
+  @apply btn-outline border-pink-500 text-pink-500 hover:border-pink-300;
+}
+
+.btn-white-outline {
+  @apply border border-double border-gray-100 text-white bg-transparent hover:border-gray-100 hover:opacity-80 hover:bg-transparent;
+}
+
+.btn-black-outline {
+  @apply btn-outline border-black text-gray-800 hover:border-gray-500;
+} 
+
+/** bread 버튼 */
+.btn-gray-bread {
+  @apply btn rounded-xl bg-gray-500 hover:bg-gray-400;
+}
+
+.btn-gray-white-bread {
+  @apply btn rounded-xl bg-gray-400 hover:bg-gray-400;
+}
+
+.btn-red-bread {
+  @apply btn rounded-xl bg-red-500 hover:bg-red-400;
+}
+
+.btn-yellow-bread {
+  @apply btn rounded-xl bg-yellow-500 hover:bg-yellow-400;
+}
+
+.btn-orange-bread {
+  @apply btn rounded-xl bg-orange-500 hover:bg-orange-400;
+}
+
+.btn-green-bread {
+  @apply btn rounded-xl bg-green-600 hover:bg-green-500;
+}
+
+.btn-blue-bread {
+  @apply btn rounded-xl bg-blue-500 hover:bg-blue-400;
+}
+
+.btn-indigo-bread {
+  @apply btn rounded-xl bg-indigo-500 hover:bg-indigo-400;
+}
+
+.btn-purple-bread {
+  @apply btn rounded-xl bg-purple-500 hover:bg-purple-400;
+}
+
+.btn-pink-bread {
+  @apply btn rounded-xl bg-pink-500 hover:bg-pink-400;
+}
+
+.btn-white-bread {
+  @apply btn rounded-xl text-gray-800 bg-gray-100 hover:bg-gray-200;
+}
+
+.btn-black-bread {
+  @apply btn rounded-xl text-gray-100 bg-gray-800 hover:bg-gray-800;
+} 
+
+/** bread 뱃지 */
+.bge-gray-bread {
+  @apply rounded-xl font-normal px-2 bg-gray-500;
+}
+
+.bge-gray-white-bread {
+  @apply rounded-xl font-normal px-2 bg-gray-300;
+}
+
+.bge-red-bread {
+  @apply rounded-xl font-normal px-2 bg-red-500;
+}
+
+.bge-yellow-bread {
+  @apply rounded-xl font-normal px-2 bg-yellow-500;
+}
+
+.bge-orange-bread {
+  @apply rounded-xl font-normal px-2 bg-orange-500;
+}
+
+.bge-green-bread {
+  @apply rounded-xl font-normal px-2 bg-green-600;
+}
+
+.bge-blue-bread {
+  @apply rounded-xl font-normal px-2 bg-blue-500;
+}
+
+.bge-indigo-bread {
+  @apply rounded-xl font-normal px-2 bg-indigo-500;
+}
+
+.bge-purple-bread {
+  @apply rounded-xl font-normal px-2 bg-purple-500;
+}
+
+.bge-pink-bread {
+  @apply rounded-xl font-normal px-2 bg-pink-500;
+}
+
+.bge-white-bread {
+  @apply rounded-xl font-normal px-2 text-gray-800 bg-gray-100;
+}
+
+.bge-black-bread {
+  @apply rounded-xl font-normal px-2 text-gray-100 bg-gray-800;
+} 
+
+.bge-tiny {
+  @apply h-4;;
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+/** 뱃지 사이즈 */
+.bge-xs {
+  @apply h-5 text-xs;
+}
+
+.bge-sm {
+  @apply h-6 text-sm;
+}
+
+.bge-lg {
+  @apply h-8 text-sm rounded-2xl;
+}
+
+.bge-xg {
+  @apply h-10 text-sm rounded-3xl;
+}

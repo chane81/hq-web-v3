@@ -1,0 +1,13 @@
+node_modules
+.vscode
+.next
+yarn.lock
+package-lock.json
+public
+build
+dist
+logs
+*.md
+*.yml
+*.yaml
+src/styles/*

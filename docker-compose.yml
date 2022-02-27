@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  frontend:
+    image: "004244720045.dkr.ecr.ap-northeast-2.amazonaws.com/hq-admin-web-v2"
+    container_name: hq-admin-web
+    mem_limit: 512m
+    ports:
+      - "80:8080"
